@@ -4,7 +4,8 @@
         "paths": {
             "assets/*": ["./assets/*"],
             "components/*": ["./components/*"],
-            "ui/*": ["./UI/*"]
+            "ui/*": ["./UI/*"],
+            "store/*": ["./store/*"]
         }
     },
     "include": ["src"]

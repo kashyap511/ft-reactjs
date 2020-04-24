@@ -1,30 +1,20 @@
-import React from 'react';
-import Container from '@material-ui/core/Container';
-import Grid from '@material-ui/core/Grid';
-import Paper from '@material-ui/core/Paper';
-import classes from './App.module.scss';
-import FundsTransfer from 'components/FundsTransfer/FundsTransfer';
+import React, { Component } from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import classes from "./App.module.scss";
+import Routes from "components/Routes/Routes";
 
-function App() {
-  return (
-    <div className="App">
-      <Container fixed className={classes.container}>
-        <Grid container spacing={3}>
-          <Grid item xs={12} md={8} >
-            <Paper elevation={3} className={classes.paper}>
-              <FundsTransfer/>
-            </Paper>
-          </Grid>
-          <Grid item xs={12} md={4} >
-            <Paper elevation={3} className={classes.paper}>
-              {/* <h1>Shopping Cart</h1> */}
-              Shopping Cart
-            </Paper>
-          </Grid>
-        </Grid>
-      </Container>
-    </div>
-  );
+class App extends Component {
+
+	render() {
+		return (
+			<Router>
+				<div className={classes.main}>
+					<Routes />
+				</div>
+			</Router>
+		);
+	}
 }
+
 
 export default App;
