@@ -1,0 +1,29 @@
+@import "../../global/global.scss";
+.form {
+    margin: 0 20px;
+    padding: 5px 20px;
+}
+.formControl {
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    color: $color-main;
+
+    @media (min-width: 768px) {
+        width: 60%;
+    }
+    @media (min-width: 600px) {
+        width: 60%;
+    }
+
+    .button {
+        background-color: $color-main;
+        width: 100%;
+        height: 50px;
+        font-weight: bold;
+    }
+
+    .button:disabled {
+        color: $color-main;
+    }
+}

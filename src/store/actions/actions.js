@@ -3,6 +3,8 @@ import {
 	SET_CREDIT_ACCOUNT,
 	GET_AMOUNT,
 	SET_DEBIT_ACCOUNT,
+	SET_FORM_VALID,
+	SET_LOGGED_IN
 } from "./actionTypes";
 
 export const setAmount = content => ({
@@ -28,5 +30,19 @@ export const setCreditAccount = account => ({
 	type: SET_CREDIT_ACCOUNT,
 	payload: {
 		account: account
+	}
+});
+
+export const setFormValid = isValid => ({
+	type: SET_FORM_VALID,
+	payload: {
+		isValid
+	}
+});
+
+export const setLoggedIn = loggedIn => ({
+	type: SET_LOGGED_IN,
+	payload: {
+		loggedIn
 	}
 });

@@ -1,6 +1,17 @@
 export const initialState = {
-    amount: 0,
-    debitAccount: [],
-    creditAccount: [],
-    transactionDate: new Date().toISOString()
+    amount: {
+        value: '',
+        valid: false
+    },
+    debitAccount: {
+        value: null,
+        valid: false
+    },
+    creditAccount: {
+        value: null,
+        valid: false
+    },
+    transactionDate: new Date().toISOString(),
+    valid: false,
+    loggedIn: false
 };

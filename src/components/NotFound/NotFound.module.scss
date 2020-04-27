@@ -1,0 +1,14 @@
+@import "../../global/global.scss";
+.section {
+    padding: 50px;
+    text-align: center;
+}
+.errorCode {
+    color: red;
+    font-size: 50px;
+}
+.errorDescription {
+    color: $color-main;
+    margin-top: 10px;
+    font-size: 30px;
+}

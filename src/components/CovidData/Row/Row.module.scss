@@ -1,0 +1,23 @@
+@import "../../../global/global.scss";
+.row {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.district {
+    width: 40%;
+    padding: 0 10px;
+}
+.data {
+    width: 12%;
+}
+.header {
+    background-color: $color-main;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    color: white;
+    box-sizing: border-box;
+}
